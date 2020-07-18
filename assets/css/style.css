@@ -5,6 +5,15 @@ section {
     align-items: center;
     color: #fff;
 }
+.menu-list h1 {
+    color: #FFF;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 70px;
+    font-weight: lighter;
+    position: relative;
+    margin-bottom: 25px;
+    @include float-lg-right;
+}
 .main {
     background-color: #f198af;
 }
@@ -24,13 +33,11 @@ section {
 .menu {
     position: fixed;
     left: 100px;top: 0;
-    z-index: 99;
+    z-index: 97;
     width: 75%;
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
+    background-color: #000012;
     transition: 0.5s;
     transform: translateX(-100%);
 }
@@ -38,16 +45,20 @@ section {
     transform: translateX(-100px);
 }
 .menu-list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50%;
-    flex-direction: column;
+    flex-direction: row;
+    color: #fff;
 }
 .menu-list a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 900;
+    height: 150px;
+    width: 200px;
+    font-family: 'Play', sans-serif;
+    margin-bottom: 20px;
+    position: relative;
+    left: 30px;
+    border: 2px solid #fff;
+    font-weight: bold;
+    transition: 0.4s;
+    color: #fff;
 }
 .menu-btn {
     border: solid black;
@@ -59,5 +70,15 @@ section {
     position: absolute;
     right: 45px;
     top: 50vh;
-
+    z-index: 99;
+}
+.menu-pic {
+    pointer-events: none;
+    z-index: 98;
+    height: 100vh;
+    width: 100px;
+    background-color: #fff;
+    position: absolute;
+    display: inline-block;
+    right: 0;
 }
