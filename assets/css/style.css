@@ -12,7 +12,6 @@ section {
     font-weight: lighter;
     position: relative;
     margin-bottom: 25px;
-    @include float-lg-right;
 }
 .main {
     background-color: #f198af;
@@ -45,7 +44,6 @@ section {
     transform: translateX(-100px);
 }
 .menu-list {
-    flex-direction: row;
     color: #fff;
 }
 .menu-list a {
@@ -54,10 +52,6 @@ section {
     font-family: 'Play', sans-serif;
     margin-bottom: 20px;
     position: relative;
-    left: 30px;
-    border: 2px solid #fff;
-    font-weight: bold;
-    transition: 0.4s;
     color: #fff;
 }
 .menu-btn {
@@ -81,4 +75,31 @@ section {
     position: absolute;
     display: inline-block;
     right: 0;
+}
+ul.button {
+    display: inline-block;
+    width: 210px;
+    height: 140px;
+    text-align: right;
+    font-family: sans-serif;
+    padding-right: 20px;
+    margin-right: 20px;
+    font-size: 24px;
+    text-transform: capitalize;
+    background: transparent;
+    border: #fff;
+    text-decoration-color: #fff;
+}
+.button:hover {
+    background-position-x: -50px;
+    background-position-y: -50px;
+}
+
+ul.listy {
+    padding: 3rem 1rem 0 1rem;
+}
+ul.listy li {
+    display: inline-block;
+    margin-right: 300px;
+    padding: 3px;
 }
